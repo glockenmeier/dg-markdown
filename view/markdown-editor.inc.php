@@ -33,16 +33,16 @@
                 action: 'dgmd_process_shortcode',
                 content: export_file_md
             };
+            export_file_html = editor.exportFile(null, 'html');
+            
             $.post(ajaxurl, data, function(response) {
                 //alert(response);
                 // re-import
-                editor.importFile(null, response);
-                export_file_html = editor.exportFile(null, 'html');
+                //editor.importFile(null, response);
                 // save altered html leaving md with shortcode intact.
-                $('#dgmd_content').val(export_file_html);
             });
+            $('#dgmd_content').val(export_file_html);
             $('#dgmd_content_md').val(export_file_md);
-            
         });
     })(jQuery);
 </script>
