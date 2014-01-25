@@ -42,7 +42,7 @@
                 $('#dgmd_content').val(export_file_html);
             });
             $('#dgmd_content_md').val(export_file_md);
-            event.preventDefault();
+            
         });
     })(jQuery);
 </script>
