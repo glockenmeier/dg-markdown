@@ -2,7 +2,7 @@
 /*
  * Copyright 2014, Darius Glockenmeier.
  * 
- * Description of markdown-editor 
+ * The markdown-editor metabox content
  */
 ?>
 <div id="epiceditor"></div>
@@ -12,12 +12,14 @@
 <script>
     var opts = {
         basePath: '../wp-content/plugins/dg-markdown',
-        autogrow: false,
+        autogrow: {
+            minHeight: 300,
+            maxHeight: 300
+        },
         useNativeFullscreen: true,
         clientSideStorage: false
     };
     var editor = new EpicEditor(opts).load();
-    
     (function($) {
         var content = $('#dgmd_content').val();
         var content_md = $('#dgmd_content_md').val();
