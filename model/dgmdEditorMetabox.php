@@ -6,7 +6,8 @@
  * Description of dgmdEditorMetabox
  *
  * @author Darius Glockenmeier <darius@glockenmeier.com>
- * @package your_package_name_here
+ * @package dg-markdown
+ * @subpackage model
  * 
  */
 class dgmdEditorMetabox extends dgmdMetabox {

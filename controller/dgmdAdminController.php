@@ -6,7 +6,8 @@
  * Description of dgmdAdminController
  *
  * @author Darius Glockenmeier <darius@glockenmeier.com>
- * @package core
+ * @package dg-markdown
+ * @subpackage controller
  * 
  */
 class dgmdAdminController extends DopeController {
@@ -14,8 +15,6 @@ class dgmdAdminController extends DopeController {
     public function __construct(DopePlugin $plugin) {
         parent::__construct($plugin);
         
-        //add_action( 'load-post.php', array( $this, 'load' ) );
-        //add_action( 'load-post-new.php', array( $this, 'load' ) );
         add_action('admin_init', array($this, 'admin_init'));
         add_action('admin_enqueue_scripts', array($this, 'admin_enqueue_scripts'), 1);
         add_action('wp_ajax_dgmd_process_shortcode', array($this, 'ajaxHandler'));

@@ -8,7 +8,7 @@
  * Description of dgs_ProductAttributesMetabox
  *
  * @author Darius Glockenmeier <darius@glockenmeier.com>
- * @package dg-shop
+ * @package dg-markdown
  * @subpackage model
  */
 abstract class dgmdMetabox extends DopeMetabox {
